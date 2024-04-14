@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<h1>Feed</h1>
+<h1>Feed Here!</h1>
 
 <div class="layout">
 	<div class="feed">
