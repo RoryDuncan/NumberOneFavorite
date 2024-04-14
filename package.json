@@ -41,5 +41,8 @@
 		"firebase": "^10.8.0",
 		"firebase-admin": "^12.0.0",
 		"open-props": "^1.6.20"
-	}
+	},
+	"workspaces": [
+		"functions"
+	]
 }
