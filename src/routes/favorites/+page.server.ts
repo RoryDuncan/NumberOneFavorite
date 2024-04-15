@@ -4,6 +4,7 @@ import { firestore } from "$lib/firebase/firebase.admin";
 import { Timestamp } from "firebase-admin/firestore";
 import type { Favorite } from "$lib/data-model";
 import type { FavoriteFormData } from "$lib/view-model";
+import type { Config } from "@sveltejs/adapter-vercel";
 
 const FavoritesRef = firestore.collection("/favorites");
 export const load: PageServerLoad = async () => {
@@ -62,3 +63,8 @@ export const actions = {
 		}
 	}
 } satisfies Actions;
+
+export const config: Config = {
+	runtime: "nodejs20.x",
+	split: true
+};
